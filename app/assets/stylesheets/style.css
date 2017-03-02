@@ -67,3 +67,12 @@ a:visited {
 .centered {
   text-align: center;
 }
+
+.return-link {
+  padding-top: 90px;
+  text-align: center;
+}
+
+.links {
+  padding-top: 50px;
+}

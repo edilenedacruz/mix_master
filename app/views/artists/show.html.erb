@@ -1,10 +1,11 @@
 <h1><%= @artist.name %></h1>
 <div class="block">
 <%= image_tag @artist.image_path, class: "card" %><br/>
-
+<div class="links">
 <%= link_to "Edit", edit_artist_path(@artist), class: "button" %>
 <%= link_to "Delete", artist_path(@artist), method: :delete, class: "button" %>
 <%= link_to "New song", new_artist_song_path(@artist), class: "button" %>
+</div>
 </div>
 <div class="return-link">
 <%= link_to "Return to Artists Index", artists_path, class: "button" %>

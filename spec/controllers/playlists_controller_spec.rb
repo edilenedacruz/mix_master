@@ -31,7 +31,7 @@ RSpec.describe PlaylistsController, type: :controller do
 
       it "re-renders the 'new' template" do
         post :create, {:playlist => attributes_for(:playlist, name: nil)}
-
+        save_and_open_page
         expect(response).to render_template("new")
       end
     end

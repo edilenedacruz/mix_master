@@ -1,11 +1,11 @@
 <%= form_for(@artist) do |f| %>
   <%= render partial: "shared/errors", locals: { target: @artist } %>
 
-  <%= f.label :name %>
+  <%= f.label :name, "Artist name:"  %>
   <%= f.text_field :name %>
-
-  <%= f.label :image_path %>
+  <br>
+  <%= f.label :image_path, "Add an image:"%>
   <%= f.text_field :image_path %>
-
-  <%= f.submit %>
+  <br
+  <%= f.submit class: "button" %>
 <% end %>

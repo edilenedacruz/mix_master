@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Shadows+Into+Light" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
   <link rel="stylesheet" href="/application.css">
   <title>MixMaster</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<style>
-body {
-font-family: 'Poiret One', cursive;
-}
-</style>
+
 <body>
 
 <% if current_user %>
@@ -21,6 +17,7 @@ font-family: 'Poiret One', cursive;
   <% else %>
 <%= link_to "Sign in with Spotify", "/auth/spotify" %>
 <% end %>
+
 
 <%= yield %>
 

@@ -1,8 +1,11 @@
 <h1><%= @artist.name %></h1>
-<%= image_tag @artist.image_path %><br/>
+<div class="block">
+<%= image_tag @artist.image_path, class: "card" %><br/>
 
-<%= link_to "Edit", edit_artist_path(@artist) %>
-<%= link_to "Delete", artist_path(@artist), method: :delete %>
-<%= link_to "New song", new_artist_song_path(@artist) %><br/>
-
-<%= link_to "Return to Artists Index", artists_path %>
+<%= link_to "Edit", edit_artist_path(@artist), class: "button" %>
+<%= link_to "Delete", artist_path(@artist), method: :delete, class: "button" %>
+<%= link_to "New song", new_artist_song_path(@artist), class: "button" %>
+</div>
+<div class="return-link">
+<%= link_to "Return to Artists Index", artists_path, class: "button" %>
+</div>
